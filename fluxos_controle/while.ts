@@ -1,30 +1,33 @@
+// Laços de repetição while e do...while em TypeScript.
+
 const condicao = true;
-// sintaxe while - evitar o uso pois consome muita memória, preferir usar array
+
+// Sintaxe do while
 while (condicao) {
-    // codigo
+    // código
 }
 
-// exemplo
+// Exemplo 1 — while
 let contador = 0;
 while (contador < 5) {
-    //console.log(contador);
+    // console.log(contador);
     contador++;
 }
 
-// sintaxe do-while
+// Sintaxe do do...while
 do {
-    // codigo
+    // código
 } while (condicao);
 
-// exemplo
+// Exemplo 2 — do...while
 let contador2 = 0;
 do {
-   // console.log(contador2);
+    // console.log(contador2);
     contador2++;
 } while (contador2 < 5);
 
-// exemplo 3
-let numero  = 1;
+// Exemplo 3 — busca com while e break
+let numero = 1;
 while (numero < 20) {
     if (numero % 5 == 0) {
         console.log("O primeiro múltiplo de 5 é: " + numero);
@@ -32,4 +35,3 @@ while (numero < 20) {
     }
     numero++;
 }
-

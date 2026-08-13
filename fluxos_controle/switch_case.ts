@@ -1,15 +1,17 @@
-// É uma estrutura de controle não muito performática então não é muito utilizada
-// Sintaxe do switch case
+// Estrutura de controle switch/case em TypeScript.
+// Útil quando há muitas comparações contra o mesmo valor.
+
+// Sintaxe do switch/case
 /*
 switch (expressao) {
     case valor1:
-        // codigo
+        // código
         break;
     case valor2:
-        // codigo
+        // código
         break;
     default:
-        // codigo
+        // código
         break;
 }
 */

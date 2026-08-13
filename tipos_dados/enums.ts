@@ -1,7 +1,7 @@
-// Enums em TypeScript
-// Enums são usados para enumerar valores possíveis
-// São estruturas de dados não ordenadas
-// Mapeiam chaves para valores
+// Enums em TypeScript: conjuntos de valores nomeados.
+
+// Os enums são usados para enumerar valores possíveis.
+// Estruturas que mapeiam chaves para valores.
 
 enum TypeName {
     constante = 1,
@@ -9,14 +9,13 @@ enum TypeName {
     funcao = 3
 }
 
-//console.log(TypeName);
+// console.log(TypeName);
 
-// Tipos de Enums
+// Tipos de enums
+
 // 1. Enum numérico
-// É indicado trabalhar com esse tipo (convenção)
-// São Enums baseados em números
-// O compilador é responsável por atribuir valores numéricos aos membros
-// Exemplo
+// É indicado trabalhar com esse tipo (convenção).
+// O compilador é responsável por atribuir valores numéricos aos membros.
 enum Idioma {
     Portugues,
     Espanhol,
@@ -27,16 +26,14 @@ enum Idioma {
 // console.log(Idioma);
 
 // 2. Enum string
-// São Enums baseados em strings
-// Cada membro deve ser inicializado com uma string como valor
-// Exemplo
+// Cada membro deve ser inicializado com uma string como valor.
 enum Idioma2 {
     Portugues = "pt",
     Espanhol = "es",
     Ingles = "en"
 }
 
-//console.log(Idioma2);
+// console.log(Idioma2);
 
 enum DiaDaSemana {
     Segunda = 'SEG',
@@ -48,27 +45,26 @@ enum DiaDaSemana {
     Domingo = 'DOM'
 }
 
-//console.log(DiaDaSemana);
+// console.log(DiaDaSemana);
 
 // Enum usando const
-// Nota: const enum é inlinado pelo compilador (não gera objeto em runtime)
+// Nota: const enum é inlinado pelo compilador (não gera objeto em runtime).
 const enum Comida {
     Pizza = "Pizza",
     Hamburger = "Hamburger",
     Churrasco = "Churrasco"
 }
 
-function comida (c: Comida) {
+function comida(c: Comida) {
     return c;
 }
 
-//console.log(comida(Comida.Pizza));
-//console.log(comida(Comida.Hamburger));
-//console.log(comida(Comida.Churrasco));
+// console.log(comida(Comida.Pizza));
+// console.log(comida(Comida.Hamburger));
+// console.log(comida(Comida.Churrasco));
 
 // Uso adequado de enums
-// Pequeno numero de valores fixos, intimamente relacionados e conhecidos em tempo de compilação
-// exemplo
+// Ideal para um pequeno número de valores fixos, intimamente relacionados e conhecidos em tempo de compilação.
 enum Tarefa {
     Todo,
     Progress,

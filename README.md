@@ -1,23 +1,27 @@
 # Aprendendo TypeScript
 
-Este projeto contém exemplos práticos para aprender TypeScript do básico ao intermediário, comparando-o com JavaScript.
+Projeto de estudo com exemplos práticos de TypeScript, abordando desde o básico até tópicos intermediários, como tipos avançados, orientação a objetos, interfaces, módulos e generics.
 
-## Estrutura do Projeto
+## Estrutura do Repositório
 
-- `hello_world/`: Exemplo básico "Olá, mundo!" em TypeScript.
-- `tipos_dados/`: Exemplos de type annotation, tipos primitivos, arrays, objetos, tuplas, enums, `any`, `unknown`, `never`, `void`, `null`/`undefined` e funções.
-- `Funcoes/`: Exemplos de funções, parâmetros opcionais, padrão e rest parameters, arrow functions e constructors.
-- `fluxos_controle/`: Exemplos de `if/else`, `switch/case`, loops `for` e `while`.
-- `POO/`: Exemplos de classes, construtores, modificadores de acesso (`public`, `private`, `protected`) e `readonly`.
-- `javascriptXtypescript.md`: Documento comparando as principais diferenças entre JavaScript e TypeScript.
+- `hello_world/` — primeiro exemplo com `console.log` e anotação de tipo.
+- `tipos_dados/` — tipos do TypeScript: primitivos, arrays, objetos, tuplas, enums, `any`, `unknown`, `void`, `never`, `null`/`undefined`, funções, `object`, `satisfies`, mapped types, conditional types, intersection types, type assertions, casting e type guards.
+- `Funcoes/` — funções, parâmetros opcionais, padrão, rest parameters, arrow functions, constructors e function constructor.
+- `fluxos_controle/` — `if/else`, `switch/case`, `for` (`for...of`, `for...in`), `while` e `do...while`.
+- `POO/` — classes, construtores, modificadores de acesso (`public`, `private`, `protected`), `readonly`, herança, classes abstratas, getters, setters e membros estáticos.
+- `Interfaces.ts` — contratos com interfaces, propriedades opcionais, `readonly`, extensão, `Omit` e comparação com `type` alias.
+- `Modulos/` — organização de código com `export`/`import`.
+- `generics/` — funções, classes, interfaces e constraints genéricas.
+- `javascriptXtypescript.md` — comparação prática entre JavaScript e TypeScript.
+- `tipos_dados/tipos.md` — resumo dos tipos em TypeScript.
 
 ## Configuração do Projeto
 
-- `package.json`: Dependências e scripts (`dev`, `build`, `test`).
-- `tsconfig.json`: Configuração do compilador TypeScript com `target: ES2022`, `strict: true` e geração de source maps.
-- `.eslintrc.js`: Configuração do ESLint com Prettier para TypeScript.
+- `package.json`: dependências e scripts (`dev`, `build`, `test`).
+- `tsconfig.json`: compilador TypeScript com `target` ES2022, `module` CommonJS, `strict: true`, geração de source maps e arquivos de declaração.
+- `.eslintrc.js`: lint com regras para TypeScript e Prettier.
 
-## Como executar os exemplos
+## Como Executar
 
 1. Instale as dependências:
 
@@ -25,43 +29,48 @@ Este projeto contém exemplos práticos para aprender TypeScript do básico ao i
    npm install
    ```
 
-2. Execute um arquivo TypeScript com `ts-node`:
+2. Execute um arquivo TypeScript com `ts-node` (script `dev`):
 
    ```powershell
    npx ts-node tipos_dados/primitivos.ts
    npx ts-node Funcoes/funcoes.ts
    ```
 
-3. Para compilar o projeto TypeScript para JavaScript:
+3. Compile o projeto TypeScript para JavaScript:
 
    ```powershell
    npx tsc
    ```
 
-   Ou usando o script definido no `package.json`:
+   Ou use o script definido no `package.json`:
 
    ```powershell
    npm run build
    ```
 
-## Principais conceitos abordados
+## Principais Conceitos Abordados
 
 - Type Annotation
 - Tipos primitivos (`number`, `string`, `boolean`, `bigint`)
-- Arrays tipados
-- Objetos tipados
+- Arrays tipados e spread operator
+- Objetos e tipos literais
 - Tuplas
-- Enums
+- Enums (numéricos, string e `const`)
 - Tipos especiais: `any`, `unknown`, `never`, `void`, `null` e `undefined`
-- Funções (parâmetros, retorno, opcionais, padrão, rest parameters, arrow functions)
+- Funções (parâmetros, retorno, opcionais, padrão, rest parameters, arrow functions, constructors)
 - Controle de fluxo (`if/else`, `switch/case`, `for`, `while`)
 - Programação Orientada a Objetos (classes, construtores, modificadores de acesso, `readonly`)
+- Herança, classes abstratas, getters, setters e membros estáticos
+- Interfaces (opcionais, `readonly`, extensão)
+- Módulos (`export`/`import`)
+- Generics (funções, classes, interfaces e constraints)
+- Type guards, mapped types, conditional types, intersection types e `satisfies`
 - Diferenças entre TypeScript e JavaScript
 
-## Arquivos úteis
+## Arquivos Úteis
 
-- [`tipos_dados/tipos.md`](tipos_dados/tipos.md): Resumo dos tipos em TypeScript.
-- [`javascriptXtypescript.md`](javascriptXtypescript.md): Comparação prática entre TypeScript e JavaScript.
+- [`tipos_dados/tipos.md`](tipos_dados/tipos.md): resumo dos tipos em TypeScript.
+- [`javascriptXtypescript.md`](javascriptXtypescript.md): comparação prática entre TypeScript e JavaScript.
 
 ---
 
@@ -70,5 +79,5 @@ Projeto criado para estudo e prática de TypeScript.
 ## Recursos Extras
 
 - [Documentação oficial do TypeScript](https://www.typescriptlang.org/docs/)
-- Curso Typescript - Microsoft Learn
-- Livro Programming TypeScript - Boris Cherny
+- [Microsoft Learn: Curso de TypeScript](https://learn.microsoft.com/pt-br/training/paths/build-javascript-applications-typescript/)
+- *Programming TypeScript* — Boris Cherny

@@ -1,36 +1,36 @@
-# Tipos de dados em TypeScript
+# Tipos de Dados em TypeScript
 
 ## Type Annotation
 
 Em TypeScript, você pode declarar o tipo da variável usando a sintaxe:
 
-``` typescript
+```typescript
 let nomeVariavel: Tipo = valor;
 ```
 
 Exemplo real do projeto:
 
-``` typescript
+```typescript
 let idade: number = 25;
 let nome: string = 'Luisa';
 ```
 
 ### Por que usar Type Annotation?
 
-Sem type annotation, TypeScript se comporta como JavaScript, perdendo a principal vantagem: segurança de tipos.
+Sem type annotation, o TypeScript se comporta como JavaScript, perdendo a principal vantagem: a segurança de tipos.
 
 ## Tipos Primitivos
 
 - **boolean**: `let estaChovendo: boolean = true;`
 - **number**: `let idade: number = 25;`
 - **string**: `let nome: string = 'Luisa';`
-- **bigint**: `let numero_grande: bigint = 9007199254741991n;`
+- **bigint**: `let numeroGrande: bigint = 9007199254741991n;`
 
 ## Arrays
 
 - Sintaxe: `let animais: string[] = ['Cachorro', 'Gato'];`
 - Alternativa: `let frutas: Array<string> = ['abacaxi', 'banana'];`
-- Spread operator: `let copia_idiomas = [...idiomas, 'Italiano', 'Chinês'];`
+- Spread operator: `let copiaIdiomas = [...idiomas, 'Italiano', 'Chinês'];`
 
 ## Objetos
 
@@ -58,10 +58,20 @@ pessoa = ['Luisa', 25, 'Cientista de dados'];
 
 ## boolean vs Boolean
 
-- `boolean` = tipo primitivo
-- `Boolean` = tipo objeto (evite usar)
+- `boolean` = tipo primitivo.
+- `Boolean` = tipo objeto (evite usar).
+
+## Outros Tipos Importantes
+
+- **any**: desativa a verificação de tipos. Evite usar em excesso.
+- **unknown**: tipo seguro para valores desconhecidos; exige verificação antes do uso.
+- **void**: indica que uma função não retorna valor.
+- **never**: usado em funções que nunca retornam (ex.: lançam erro ou loop infinito).
+- **null** e **undefined**: representam ausência de valor.
+- **enum**: conjunto de valores nomeados.
 
 ---
 
 **Resumo:**
+
 TypeScript permite definir tipos para variáveis, funções, arrays, objetos e tuplas, trazendo mais segurança e clareza ao código em comparação ao JavaScript.

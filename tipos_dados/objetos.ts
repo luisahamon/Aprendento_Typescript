@@ -1,4 +1,4 @@
-// Objetos em TypeScript
+// Objetos em TypeScript: definição de tipos literais.
 
 let carro: {
     marca: string,
@@ -13,4 +13,5 @@ carro = {
     placa: 'ABC-1234',
     valor: 50000
 };
-//console.log(carro);
+
+// console.log(carro);
